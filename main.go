@@ -12,7 +12,7 @@ import (
 
 func main(){
   app := fiber.New()
-  dsn :="host=localhost user=root password=Ad7svm123@ dbname=go_login port=5432 sslmode=disable"
+  dsn :=""
   db , err := gorm.Open(postgres.Open(dsn) , &gorm.Config{})
   if err != nil {
     log.Fatal(err)
